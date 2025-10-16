@@ -13,7 +13,7 @@ export const registerUser = async (req, res) => {
       return res.status(400).json({ message: "User already exist" });
     }
 
-    // console.log(userExist)//
+    
     const createUser = await User.create({
       username,
       email,
