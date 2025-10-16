@@ -1,4 +1,4 @@
-swaggerConfig.js
+// swagger/swaggerConfig.js
 import swaggerJsdoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
 
@@ -27,7 +27,7 @@ const options = {
       },
     },
   },
-  apis: ["./routes/*.js"], // path to your route files
+  apis: ["./authRoutes/*.js"], // path to your route files
 };
 
 const swaggerSpec = swaggerJsdoc(options);
